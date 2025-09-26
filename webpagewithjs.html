@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Tram's Lightbulb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+    <h2>Tram's lightbulb of ideas</h2>
 
-<p>JavaScript can change HTML attribute values.</p>
+    <p>This demonstrates how JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <p>Click the buttons to turn on and off the lightbulb when you get an idea.</p>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <div class="lightbox">
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    </div>
 
 </body>
+
 </html>
